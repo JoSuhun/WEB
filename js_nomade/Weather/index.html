@@ -8,23 +8,36 @@
     <title>hoho</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="parent">
+    <div class="parent flex-column">
     
 
     <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="what is your name?">
-        <input type="submit" value="Log In">
+        <div class="input-group">
+        <input required maxlength="15" class="form-control" type="text" placeholder="what is your name?">
+        <!-- <input type="submit" value="Log In"> -->
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Login</button>
+        </div>
     </form>
 
     <h2 id="clock">00:00:00</h2>
 
     <h1 id="greeting" class="hidden"></h1>
 
+
+
+
     <form id="todo-form" action="">
-        <input type="text" placeholder="할일을 작성하세요">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="오늘의 할일" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">등록</button>
+        </div>
     </form>
 
     <ul id="todo-list">
@@ -43,11 +56,11 @@
 
 
     <script src="js/greeting.js"></script>
-    <!-- <script src="js/clock.js"></script> -->
+    <script src="js/clock.js"></script>
     <script src="js/musics.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
+    <!-- <script src="js/weather.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
