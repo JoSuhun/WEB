@@ -16,7 +16,7 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
-  padding-top: 18%;
+  padding-top: 10%;
 
 
 }
@@ -63,4 +63,28 @@ body {
 #music {
   position: absolute;
   bottom: 0px;
+}
+
+#todo-button {
+  width:400px;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+li {
+  margin-bottom: 10px;
+
+}
+
+.complete {
+  text-decoration : line-through;
+}
+
+#todo-list {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+
+
 }
