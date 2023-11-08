@@ -8,29 +8,41 @@
 </head>
 <body>
     <div id="root"></div>
-
-
 </body>
-<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+
+
+<script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel">
-  function Btn (props) {
-    return <button 
+
+  function Btn ({ text, changeValue, fontSize }) {
+    return (<button 
+      onClick={changeValue}
       style={{
         backgroundColor : "tomato",
         padding : "10px 20px",
         color : "white",
         borderRadius : 10,
         border : 0,
+        fontSize,
       }}>
-    props.text
+    {text}
     </button>
+  )}
+
+  Btn.propTypes = {
+    text: PropTypes.string,
+    fontSize: PropTypes.number,
   }
+
   function App () {
-      return (
+    const [value, setValue] = React.useState('Save Changes')
+    const changeValue = () => setValue('Revert Changes')
+    return (
       <div>
-        <Btn text="Save Changes" />
+        <Btn text={value} changeValue={changeValue} fontSize={18}/>
         <Btn text="Continue" />
       </div>
   )}
