@@ -11,7 +11,7 @@ const Edit = () => {
 
     return(
         <div>
-            <h1>수정!</h1>
+            <h1>Edit!</h1>
             <p>이곳은 일기 수정 페이지라네</p>
             <button onClick={()=>setSearchParams({who:'tomato'})}>바꾸기</button>
             <button onClick={()=>{
