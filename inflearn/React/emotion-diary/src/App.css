@@ -274,3 +274,73 @@ header button {
   background-color: #fd565f;
   color: white;
 }
+
+/* Diary */
+.diary_page {
+  
+}
+.diary_page section {
+  width: 100%;
+  margin-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.diary_page h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.diary_page .diary_img_wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.diary_page img {
+  height: 60%;
+}
+
+.diary_page .emotion_descript {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.diary_page .diary_img_wrapper_1 {
+  background-color: #64c964;
+}
+.diary_page .diary_img_wrapper_2 {
+  background-color: #9dd772;
+}
+.diary_page .diary_img_wrapper_3 {
+  background-color: #fdce17;
+}
+.diary_page .diary_img_wrapper_4 {
+  background-color: #fd8446;
+}
+.diary_page .diary_img_wrapper_5 {
+  background-color: #fd565f;
+}
+
+.diary_page .diary_content_wrapper {
+  width: 100%;
+  background-color: #ececec;
+  border-radius: 5px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.diary_page .diary_content_wrapper p {
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Nanum Myeongjo';
+  line-height: 2.5;
+}
