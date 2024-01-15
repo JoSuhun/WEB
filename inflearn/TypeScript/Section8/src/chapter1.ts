@@ -51,3 +51,9 @@ const postlist: PostList[number] = {
     age: 8,
   },
 };
+
+type Tup = [number, string, boolean]
+
+type Tup0 = Tup[0]
+type Tup1 = Tup[1]
+type Tup2 = Tup[2]
