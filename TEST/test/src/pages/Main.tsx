@@ -1,19 +1,22 @@
-import React from 'react'
-import { ScrollAnimationContainer } from '../components/ScrollAnimationContainer'
-import { Container } from '../styles/animation'
+import React from "react";
+import { ScrollAnimationContainer } from "../components/ScrollAnimationContainer";
+import Navbar from "../components/Navbar";
 
-type Props = {}
+import FirstSection from "../components/Main/FirstSection";
+import SecondSection from "../components/Main/SecondSection";
+
+type Props = {};
 
 const Main = (props: Props) => {
   return (
-    <div>
-
+    <>
+      <Navbar />
       <ScrollAnimationContainer>
-        <h1>조수훈</h1>
+        <FirstSection />
       </ScrollAnimationContainer>
 
       <ScrollAnimationContainer>
-        <h1>이승현</h1>
+        <SecondSection />
       </ScrollAnimationContainer>
 
       <ScrollAnimationContainer>
@@ -23,9 +26,8 @@ const Main = (props: Props) => {
       <ScrollAnimationContainer>
         <h1>현승이</h1>
       </ScrollAnimationContainer>
+    </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Main
+export default Main;
