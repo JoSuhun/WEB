@@ -16,9 +16,8 @@ const NavbarBody = styled.div`
     transition-duration: 300ms;
     display: flex;
     align-items: center;
+    justify-content: center;
     .title {
-      position: absolute;
-      left: 50%;
       font-weight: 700;
       font-size: 1.5rem;
       letter-spacing: 0.2rem;

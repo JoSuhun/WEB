@@ -16,7 +16,7 @@ function Navbar({}: Props) {
     <>
       <NavbarBody>
         <div className={scrollPosition < 100 ? "nav original" : "nav change"}>
-          <span className="title">ORAN</span>
+          <span className="title">HOHOHOHOHOHOHOH</span>
           <div className="button_section">
             <span>no.1</span>
             <span>no.2</span>

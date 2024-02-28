@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 
 import FirstSection from "../components/Main/FirstSection";
 import SecondSection from "../components/Main/SecondSection";
+import InfoSection from "../components/Main/InfoSection";
 
 type Props = {};
 
@@ -11,6 +12,9 @@ const Main = (props: Props) => {
   return (
     <>
       <Navbar />
+
+      <InfoSection />
+
       <ScrollAnimationContainer>
         <FirstSection />
       </ScrollAnimationContainer>

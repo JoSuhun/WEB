@@ -1,16 +1,14 @@
-import React from 'react'
-import Card from '../../styles/Main/MainStyle'
+import React from "react";
+import { Card } from "../../styles/Main/MainStyle";
 
-type Props = {}
+type Props = {};
 
 const FirstSection = (props: Props) => {
   return (
     <>
-        <Card>
-            FIRST-SECTION
-        </Card>
+      <Card>FIRST-SECTION</Card>
     </>
-  )
-}
+  );
+};
 
-export default FirstSection
+export default FirstSection;
