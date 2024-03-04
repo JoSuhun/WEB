@@ -1,8 +1,18 @@
 import styled from "styled-components";
 
-const MainCard = styled.div`
+const Wrapper = styled.div`
   width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+`
+
+const MainCard = styled.div`
+  width: 90%;
   height: 100%;
+  background-color: #ececec;
+  border-radius: 20px;
   .words_box {
     position: relative;
     z-index: 100;
@@ -13,12 +23,12 @@ const MainCard = styled.div`
     }
   }
   span {
-    font-size: 10rem;
+    font-size: 8rem;
     letter-spacing: 1.2rem;
-    font-family: "Kode Mono", monospace;
+    font-family: "Giants-Inline";
   }
   .no1 {
-    color: #ee5b00;
+    color: #4a4a4a;
   }
 
   @keyframes fallingAnimation {
@@ -49,4 +59,4 @@ const KeywordsCard = styled.div`
   background-color: navy;
   height: 50vh;
 `;
-export { MainCard, KeywordsCard };
+export { Wrapper, MainCard, KeywordsCard };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SlideWrapper = styled.div`
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   background-color: #040461;
   align-items: center;
@@ -37,10 +37,10 @@ const SlideWrapper = styled.div`
     .slide-box {
       align-items: center;
       &.original {
-        animation: 100s linear infinite normal none running infiniteAnimation1;
+        animation: 120s linear infinite normal none running infiniteAnimation1;
       }
       &.clone {
-        animation: 100s linear infinite infiniteAnimation2;
+        animation: 120s linear infinite infiniteAnimation2;
       }
     }
   }
@@ -49,9 +49,10 @@ const SlideWrapper = styled.div`
 const SlideText = styled.div`
   display: inline-block;
   color: white;
-  font-size: 3rem;
+  font-family: "SEBANG_Gothic_Bold";
+  font-size: 2rem;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 200;
   margin: 0 20px;
 `;
 

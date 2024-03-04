@@ -10,7 +10,7 @@ const NavbarBody = styled.div`
   height: 13vh;
   overflow: hidden;
   .nav {
-    font-family: "Kode Mono", monospace;
+    font-family: "Giants-Inline";
     height: 13vh;
     transition-duration: 300ms;
     display: flex;
@@ -20,16 +20,16 @@ const NavbarBody = styled.div`
     z-index: 5;
     .title {
       font-weight: 700;
-      font-size: 1.7rem;
+      font-size: 2.2rem;
       letter-spacing: 0.2rem;
     }
     .button-section {
       position: absolute;
-      right: 3%;
+      right: 5%;
       display: flex;
       justify-content: space-between;
       button {
-        font-family: "Kode Mono", monospace;
+        font-family: "SEBANG_Gothic_Bold";
         cursor: pointer;
         margin: 0 10%;
         font-size: 1.7rem;
@@ -39,8 +39,11 @@ const NavbarBody = styled.div`
         color: white;
         border: none;
         border-radius: 10px;
-        width: 6vw;
+        width: 7vw;
         height: 5vh;
+      }
+      .login-btn {
+        background-color: navy;
       }
       :nth-child(1) {
       }
@@ -73,8 +76,8 @@ const NavbarBody = styled.div`
       cursor: pointer;
       margin: 10% 5%;
       padding-left: 3%;
-      font-size: 1.7rem;
-      font-weight: 100;
+      font-size: 1.5rem;
+      font-weight: 200;
       font-family: "Noto Sans KR", sans-serif;
       &:hover {
         color: white;

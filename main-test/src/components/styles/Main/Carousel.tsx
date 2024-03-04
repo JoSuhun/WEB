@@ -4,13 +4,12 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import StopIcon from "@mui/icons-material/Stop";
 
 const Wrapper = styled.div`
-  margin-bottom: 3%;
   overflow: hidden;
 `;
 
 const Container = styled.div`
   height: 60vh;
-  width: 100dvw;
+  width: 100vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -69,6 +68,11 @@ const CarouselCard = styled.div<{ bgimage: string }>`
   background-position: bottom 10% right;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
   &::before {
     background-color: #000000;
     opacity: 0.5;
@@ -80,6 +84,52 @@ const CarouselCard = styled.div<{ bgimage: string }>`
     bottom: 0;
     right: 0;
     left: 0;
+  }
+  p {
+    position: absolute;
+    z-index: 5;
+    font-family: "SEBANG_Gothic_Bold";
+    color: white;
+    padding: 1% 3%;
+    margin: 0;
+  }
+  .card1-title {
+    background-color: #ff7700;
+    top: 40%;
+    left: 0;
+    font-size: 2rem;
+  }
+  .card1-content {
+    background-color: #ffffff;
+    color: #040082;
+    top: 60%;
+    left: 0;
+    font-size: 1.5rem;
+  }
+  .card2-title {
+    background-color: #ffb700;
+    top: 50%;
+    left: 3%;
+    font-size: 2rem;
+  }
+  .card2-content {
+    top: 65%;
+    left: 0;
+    font-size: 1.5rem;
+  }
+  .card3-title {
+    background-color: #00233b;
+    text-align: center;
+    /* left: 40%; */
+    /* top: 30%; */
+    font-size: 2.2rem;
+    position: relative;
+    width: 15vw;
+    height: 10%;
+  }
+  .card3-content {
+    font-size: 1.5rem;
+    position: relative;
   }
 `;
 

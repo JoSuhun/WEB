@@ -9,11 +9,8 @@ function Main() {
     <Navbar />
     <Slide />
     <Carousel />
-    {/* <MainSection /> */}
+    <MainSection />
     <KeywordsSection />
-    <div>
-      안녕하세용
-    </div>
     </>
   )
 }

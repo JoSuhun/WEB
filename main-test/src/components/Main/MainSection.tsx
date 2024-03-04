@@ -1,7 +1,7 @@
-import { MainCard } from "../styles/Main/MainStyle";
+import { Wrapper,MainCard } from "../styles/Main/MainStyle";
 import { useState, useEffect } from "react";
 
-import bgimage from '../../assets/images/bg-image.jpg'
+import bgimage from "../../assets/images/bg-image.jpg";
 
 function MainSection() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -21,34 +21,36 @@ function MainSection() {
 
   return (
     <>
-      <MainCard>
-        <div className="words_box">
-          <p className={`key ${word}`}>
-            <span className="J">J</span>
-          </p>
-          <p className={`key ${word}`}>
-            <span className="O">O</span>
-          </p>
-          <p className={`key ${word}`}>
-            <span className="S">S</span>
-          </p>
-          <p className={`key ${word}`}>
-            <span className="U1">U</span>
-          </p>
-          <p className={`key ${word}`}>
-            <span className="H">H</span>
-          </p>
-          <p className={`key ${word}`}>
-            <span className="U2">U</span>
-          </p>
-          <p className={`key ${word}`}>
-            <span className="N">N</span>
-          </p>
-          <p className={`key ${word}`}>
-            <span className="N">!</span>
-          </p>
-        </div>
-      </MainCard>
+      <Wrapper>
+        <MainCard>
+          <div className="words_box">
+            <p className={`key ${word}`}>
+              <span className="J">S</span>
+            </p>
+            <p className={`key ${word}`}>
+              <span className="O">T</span>
+            </p>
+            <p className={`key ${word}`}>
+              <span className="S">O</span>
+            </p>
+            <p className={`key ${word}`}>
+              <span className="U1">C</span>
+            </p>
+            <p className={`key ${word}`}>
+              <span className="H">K</span>
+            </p>
+            <p className={`key ${word}`}>
+              <span className="U2">E</span>
+            </p>
+            <p className={`key ${word}`}>
+              <span className="N">R</span>
+            </p>
+            <p className={`key ${word}`}>
+              <span className="N">!</span>
+            </p>
+          </div>
+        </MainCard>
+      </Wrapper>
     </>
   );
 }

@@ -31,7 +31,7 @@ function Carousel() {
     }
   };
 
-  // 캐러셀 3초마다 넘김
+  // 캐러셀 4초마다 넘김
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) =>

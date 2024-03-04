@@ -19,10 +19,11 @@ function Navbar() {
     <>
       <NavbarBody>
         <div className={scrollPosition < 60 ? "nav change" : "nav change"}>
-          <span className="title">HI C105 STOCKNEWS</span>
+          <span></span>
+          <span className="title">STOCKER</span>
           <div className="button-section">
+            <button className="login-btn">LOGIN</button>
             <button onClick={navtoggle}>MENU</button>
-            {/* <button>Settings</button> */}
           </div>
         </div>
         <div
