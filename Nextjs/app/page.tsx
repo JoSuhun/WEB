@@ -1,3 +1,10 @@
+import Navigation from "./components/navigation";
+
 export default function Tomato() {
-  return <div>안뇽</div>;
+  return (
+    <div>
+      <Navigation />
+      안뇽
+    </div>
+  );
 }
